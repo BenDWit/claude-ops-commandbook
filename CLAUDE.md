@@ -20,6 +20,19 @@ commands/
 │   ├── plesk-php-version.md (command: /plesk-php)
 │   ├── plesk-security-audit.md
 │   └── Plesk-ssl-renew.md
+├── linux/
+│   └── diagnostics/    # Linux system diagnostics
+│       ├── boot-system.md
+│       ├── disk-filesystem.md
+│       ├── network.md
+│       ├── performance.md
+│       ├── process.md
+│       ├── security-audit.md
+│       └── webserver.md
+├── monitoring/
+│   └── diagnostics/    # Monitoring system diagnostics
+│       ├── grafana.md
+│       └── wazuh.md
 └── filesystem/
     └── cleanup/        # Filesystem organization commands
         ├── desktop-tidy.md
@@ -50,6 +63,23 @@ All command files follow a consistent structure:
 - Organize files by type into folders
 - Prompt user before deleting potentially unused files
 - Are less structured and more interactive
+
+**Linux Diagnostics Commands**: Comprehensive system diagnostic commands with:
+- Structured diagnostic workflows (8 tasks per command)
+- Extensive bash command collections (300-450 lines per file)
+- Multiple diagnostic sections (10-20 per command)
+- Organized by functional area (not alphabetical)
+- Include warnings for dangerous operations
+- Structured "Output Format" section for reporting
+
+**Monitoring Commands**: Technical diagnostic commands with:
+- Service health checks (systemctl, API endpoints)
+- API-based diagnostics with authentication (curl with tokens)
+- Log analysis and alerting status
+- Performance metrics collection
+- Support for both native and containerized deployments (Docker)
+- Structured JSON output parsing (jq)
+- Security considerations (API token handling)
 
 ## Installation
 

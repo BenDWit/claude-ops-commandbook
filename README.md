@@ -10,10 +10,12 @@ A collection of custom slash commands for Claude Code, providing structured work
   - [Available Commands](#available-commands)
     - [Filesystem](#filesystem)
     - [Linux Diagnostics](#linux-diagnostics)
+    - [Monitoring Diagnostics](#monitoring-diagnostics)
     - [Plesk](#plesk)
   - [Usage Examples](#usage-examples)
     - [Filesystem Commands](#filesystem-commands)
     - [Linux Diagnostics Commands](#linux-diagnostics-commands)
+    - [Monitoring Diagnostics Commands](#monitoring-diagnostics-commands)
     - [Plesk Commands](#plesk-commands)
   - [Requirements](#requirements)
   - [Notes](#notes)
@@ -55,6 +57,15 @@ Comprehensive system diagnostic commands for Linux servers.
 | `/linux-diagnostics-process` | Troubleshoot processes, zombies, and resource hogs |
 | `/linux-diagnostics-security-audit` | Audit sudo, users, SSH, and authentication security |
 | `/linux-diagnostics-webserver` | Diagnose Apache/Nginx webserver issues and logs |
+
+### Monitoring Diagnostics
+
+Diagnostic commands for monitoring systems like Grafana and Wazuh.
+
+| Command | Description |
+|---------|-------------|
+| `/monitoring-diagnostics-grafana` | Diagnose Grafana service health, datasource connectivity, dashboards, and alerts |
+| `/monitoring-diagnostics-wazuh` | Diagnose Wazuh manager/agent status, alerts, rules, and log processing |
 
 ### Plesk
 
@@ -109,6 +120,28 @@ Commands for Plesk server administration.
 /linux-diagnostics-webserver --apache
 ```
 
+### Monitoring Diagnostics Commands
+
+```bash
+# Grafana full diagnostics
+/monitoring-diagnostics-grafana
+
+# Check datasources only
+/monitoring-diagnostics-grafana --datasources
+
+# Check dashboard errors
+/monitoring-diagnostics-grafana --dashboards
+
+# Wazuh manager and agents
+/monitoring-diagnostics-wazuh
+
+# Cluster health check
+/monitoring-diagnostics-wazuh --cluster
+
+# Agent status only
+/monitoring-diagnostics-wazuh --agents
+```
+
 ### Plesk Commands
 
 ```bash
@@ -145,6 +178,9 @@ Commands for Plesk server administration.
 
 - **Filesystem Commands**: Basic shell access and file permissions
 - **Linux Diagnostics Commands**: Root/sudo access to Linux server, SSH connection, standard diagnostic tools (may require installing sysstat, smartmontools, etc.)
+- **Monitoring Diagnostics Commands**:
+  - Grafana: Access to Grafana server (SSH), API token for full diagnostics, port 3000 access
+  - Wazuh: Root/sudo access to Wazuh manager, access to `/var/ossec/` directory, API authentication
 - **Plesk Commands**: Root/sudo access to Plesk server, SSH connection, Plesk CLI tools (`plesk bin`)
 
 ## Notes
