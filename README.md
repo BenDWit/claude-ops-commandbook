@@ -9,9 +9,11 @@ A collection of custom slash commands for Claude Code, providing structured work
   - [Installation](#installation)
   - [Available Commands](#available-commands)
     - [Filesystem](#filesystem)
+    - [Linux Diagnostics](#linux-diagnostics)
     - [Plesk](#plesk)
   - [Usage Examples](#usage-examples)
     - [Filesystem Commands](#filesystem-commands)
+    - [Linux Diagnostics Commands](#linux-diagnostics-commands)
     - [Plesk Commands](#plesk-commands)
   - [Requirements](#requirements)
   - [Notes](#notes)
@@ -40,6 +42,20 @@ Commands for filesystem-related tasks, such as cleanup and organization.
 | `/filesystem-cleanup-desktop-tidy` | Organize and clean up files on the desktop |
 | `/filesystem-cleanup-download-tidy` | Organize and clean up files in the downloads folder |
 
+### Linux Diagnostics
+
+Comprehensive system diagnostic commands for Linux servers.
+
+| Command | Description |
+|---------|-------------|
+| `/linux-diagnostics-boot-system` | Diagnose boot issues, systemd, and dbus problems |
+| `/linux-diagnostics-disk-filesystem` | Check disk space, filesystem health, and storage issues |
+| `/linux-diagnostics-network` | Diagnose network connectivity, DNS, routing, and firewall |
+| `/linux-diagnostics-performance` | Analyze CPU, memory, disk I/O, and resource bottlenecks |
+| `/linux-diagnostics-process` | Troubleshoot processes, zombies, and resource hogs |
+| `/linux-diagnostics-security-audit` | Audit sudo, users, SSH, and authentication security |
+| `/linux-diagnostics-webserver` | Diagnose Apache/Nginx webserver issues and logs |
+
 ### Plesk
 
 Commands for Plesk server administration.
@@ -66,6 +82,31 @@ Commands for Plesk server administration.
 
 # Clean up downloads folder
 /filesystem-cleanup-download-tidy
+```
+
+### Linux Diagnostics Commands
+
+```bash
+# Check boot and systemd issues
+/linux-diagnostics-boot-system
+
+# Analyze system performance
+/linux-diagnostics-performance
+
+# Network diagnostics
+/linux-diagnostics-network
+
+# Security audit
+/linux-diagnostics-security-audit
+
+# Disk and filesystem check
+/linux-diagnostics-disk-filesystem
+
+# Process diagnostics
+/linux-diagnostics-process --high-cpu
+
+# Webserver diagnostics
+/linux-diagnostics-webserver --apache
 ```
 
 ### Plesk Commands
@@ -103,6 +144,7 @@ Commands for Plesk server administration.
 ## Requirements
 
 - **Filesystem Commands**: Basic shell access and file permissions
+- **Linux Diagnostics Commands**: Root/sudo access to Linux server, SSH connection, standard diagnostic tools (may require installing sysstat, smartmontools, etc.)
 - **Plesk Commands**: Root/sudo access to Plesk server, SSH connection, Plesk CLI tools (`plesk bin`)
 
 ## Notes
