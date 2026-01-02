@@ -1,0 +1,10 @@
+Recurse to my downloads (~/Downloads)
+
+Help me clean it up!
+
+See what non-launcher files I have
+
+Create filetype folders like audio, video photos etc and move files of that association into those subfolders.
+
+If you think you can see files which are probably no longer needed, ask me if they can be deleted
+
