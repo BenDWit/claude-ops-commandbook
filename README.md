@@ -200,3 +200,11 @@ Feel free to modify these commands for your specific environment:
 - Add integration with your ticketing or notification systems
 - Extend with additional Plesk extensions or filesystem utilities
 - Adapt for different operating systems or server setups
+
+
+## credits 
+- https://github.com/danielrosehill/Claude-Linux-Desktop-Manager
+- https://github.com/danielrosehill/Claude-Code-Linux-Desktop-Slash-Commands
+- https://github.com/danielrosehill/Claude-Proxmox-Manager-Template
+- https://github.com/danielrosehill/Claude-Slash-Commands
+- claude.ai
