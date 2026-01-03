@@ -191,15 +191,6 @@ Commands for Plesk server administration.
 - Backup important data before making changes
 - These commands are designed to work with Claude Code's slash command system
 
-## Customization
-
-Feel free to modify these commands for your specific environment:
-
-- Add company-specific paths or configurations
-- Include custom monitoring endpoints
-- Add integration with your ticketing or notification systems
-- Extend with additional Plesk extensions or filesystem utilities
-- Adapt for different operating systems or server setups
 
 
 ## credits 
